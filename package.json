@@ -1,33 +1,26 @@
 {
   "name": "static-boilerplate",
-  "version": "1.0.0",
-  "description": "Ever changing static site boilerplate with SASS and NPM build script",
-  "main": "index.js",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "watch:sass": "node-sass sass/main.scss css/style.css -w",
-    "devserver": "live-server",
-    "start": "npm-run-all --parallel devserver watch:sass",
-    "": "",
-    "compile:sass": "node-sass sass/main.scss css/style.comp.css",
-    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.comp.css -o css/style.prefix.css",
-    "compress:css": "node-sass css/style.prefix.css css/style.css --output-style compressed",
-    "build:css": "npm-run-all compile:sass prefix:css compress:css"
+    "dev": "next dev",
+    "build": "next build",
+    "export": "next build && next export && next-export-optimize-images",
+    "start": "next start",
+    "lint": "next lint"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/spudunk/static-boilerplate.git"
+  "dependencies": {
+    "next": "12.2.5",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
   },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/spudunk/static-boilerplate/issues"
-  },
-  "homepage": "https://github.com/spudunk/static-boilerplate#readme",
   "devDependencies": {
-    "autoprefixer": "^10.4.7",
-    "concat": "^1.0.3",
-    "node-sass": "^7.0.1",
-    "npm-run-all": "^4.1.5",
-    "postcss-cli": "^9.1.0"
+    "@types/node": "18.7.13",
+    "@types/react": "18.0.17",
+    "@types/react-dom": "18.0.6",
+    "eslint": "8.22.0",
+    "eslint-config-next": "12.2.5",
+    "next-export-optimize-images": "^1.6.1",
+    "typescript": "4.8.2"
   }
 }
