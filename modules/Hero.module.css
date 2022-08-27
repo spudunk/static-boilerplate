@@ -1,5 +1,10 @@
 .section {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 10%, rgba(0, 142, 50, 0.2) , rgba(255, 255, 255, .2));
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 10%,
+    rgba(var(--color-primary), .3),
+    rgba(var(--color-secondary), .3)
+  );
 }
 
 .container {

@@ -1,9 +1,13 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import Image from "next/image";
+// import Image from "next/image";
 import styles from "../styles/Home.module.css";
 
-import Hero from "../modules/hero"
+import Hero from "../modules/hero";
+import About from "../modules/about";
+import Contact from "../modules/contact";
+import Products from "../modules/products";
+import Footer from "../modules/footer";
 
 const Home: NextPage = () => {
   return (
@@ -16,10 +20,11 @@ const Home: NextPage = () => {
 
       <main className={styles.main}>
         <Hero />
-        
+        <About />
+        <Products />
+        <Contact />
       </main>
-
-      <footer className={styles.footer}></footer>
+    <Footer />
     </div>
   );
 };

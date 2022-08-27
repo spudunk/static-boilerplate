@@ -1,0 +1,15 @@
+.section {
+  background-color: #ff77dd11;
+}
+
+.container {
+  min-height: 30vh;
+  padding: 0 var(--container-padding);
+  display: flex;
+  /* align-items: center; */
+  /* justify-content: center; */
+}
+
+.heading {
+  padding: 2rem 0;
+}
