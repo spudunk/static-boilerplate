@@ -1,0 +1,18 @@
+.footer {
+  background-color: #ee33dd11;
+}
+
+.container {
+  min-height: 5rem;
+  padding: 0 var(--container-padding);
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+
+@media (prefers-color-scheme: dark) {
+  .footer {
+    border-color: #222;
+  }
+}
