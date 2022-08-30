@@ -1,0 +1,30 @@
+.section {
+  background-color: #88888822;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  transition: top 0.3s; /* Transition effect when sliding down (and up) */
+  display: none;
+}
+
+.container {
+  padding: 0 var(--container-padding);
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+.navigation {
+  min-height: 3.5rem;
+  width: 100%;
+  display: flex; 
+  align-items: center;
+  justify-content: flex-end;
+  gap: 2rem;
+
+  list-style: none;
+  
+}
+.navigation li {
+  border-bottom: 1px solid ;
+}
