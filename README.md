@@ -19,6 +19,13 @@ Initialize Firebase with ```firebase init```
 copy app config and initialize in _app.tsx 
 
 
+## Deployment Git (testing)
+```git remote add static-boilerplate https://github.com/spudunk/static-boilerplate.git```
+```git remote update```
+```git switch -c v2```
+```git merge --allow-unrelated-histories static-boilerplate/main```
+
+
 
 ## Learn More
 
