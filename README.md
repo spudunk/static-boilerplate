@@ -1,4 +1,7 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## About
+This is a boilerplate NextJS app for building static React powered websites. 
+It uses [next-export-optimize-images](https://github.com/dc7290/next-export-optimize-images) and sharp to perform image optimizations
+
 
 ## Getting Started
 
@@ -6,17 +9,16 @@ First, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
 ```
-
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## Deployment
+Copy repo
+push new origin ```git remote set-url origin <new url>```
+Initialize Firebase with ```firebase init```
+copy app config and initialize in _app.tsx 
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
 ## Learn More
 
